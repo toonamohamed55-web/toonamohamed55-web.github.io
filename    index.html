@@ -2,41 +2,42 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NovA - متجر الأناقة السوداني</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovA - متجر الجمال السوداني</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:system-ui;background:#fff0f5;color:#222}
-header{background:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px #0001;position:sticky;top:0;z-index:10}
-.logo{font-weight:900;font-size:26px;color:#e91e63;letter-spacing:1px}
-.hero{text-align:center;padding:65px 20px;background:linear-gradient(135deg,#ff2e78,#ff8eb3);color:#fff}
-.hero h1{margin:0 0 10px;font-size:32px}
-.hero p{opacity:.9}
-.btn{margin-top:18px;background:#111;color:#fff;padding:12px 28px;border-radius:30px;border:0;font-size:16px}
-.products{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:18px}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px #0001;text-align:center;padding-bottom:10px}
-.card img{width:100%;height:150px;object-fit:cover}
-.card h3{font-size:14px;margin:10px 6px 4px}
-.card p{margin:0;color:#e91e63;font-weight:700}
-.card button{margin-top:8px;background:#e91e63;color:#fff;border:0;padding:9px 14px;border-radius:20px;width:90%}
-footer{text-align:center;padding:22px;color:#aaa;font-size:13px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI';background:#fff8fb;color:#333;line-height:1.7}
+header{background:linear-gradient(135deg,#ff1f7a,#ff8fab);padding:30px;text-align:center;color:white}
+nav{background:white;padding:12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0}
+nav a{margin:0 12px;color:#ff1f7a;text-decoration:none;font-weight:bold}
+.hero{padding:35px;text-align:center}
+.hero h2{color:#ff1f7a;font-size:28px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;padding:20px;max-width:1000px;margin:auto}
+.card{background:white;border-radius:20px;padding:16px;box-shadow:0 6px 18px rgba(255,31,122,0.12);text-align:center}
+.card img{width:100%;border-radius:14px;height:150px;object-fit:cover}
+.price{color:#ff1f7a;font-weight:bold}
+.btn{display:inline-block;margin-top:10px;background:#ff1f7a;color:white;padding:9px 20px;border-radius:25px;text-decoration:none}
+.section{max-width:900px;margin:30px auto;padding:20px;background:white;border-radius:20px;box-shadow:0 4px 15px rgba(0,0,0,0.06)}
+.section h2{color:#ff1f7a;text-align:center;margin-bottom:15px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px 10px;border-bottom:1px solid #ffe0ec;text-align:right;font-size:14px}
+th{background:#fff0f5;color:#ff1f7a}
+.badge{display:inline-block;background:#e8fff0;color:#0a7a30;padding:6px 14px;border-radius:20px;border:1px solid #b7f0c7}
+footer{background:#222;color:white;text-align:center;padding:30px;margin-top:40px}
 </style>
 </head>
 <body>
-<header><div class="logo">NovA</div><div>🛍️</div></header>
-<div class="hero">
-<h1>أناقتك تبدأ من NovA</h1>
-<p>أجمل تشكيلات الملابس النسائية والأكسسوارات - توصيل لكل السودان</p>
-<button class="btn" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">تسوقي الآن</button>
+<header><h1>NovA ✨</h1><p>متجر الجمال - أم درمان</p><p>📞 0969022108</p></header>
+<nav><a href="#products">المنتجات</a><a href="#prices">قائمة الأسعار</a><a href="#register">السجل التجاري</a></nav>
+<div class="hero"><h2>أهلاً بيك في NovA 💖</h2><p>توصيل سريع أم درمان والخرطوم</p></div>
+<div id="products" class="products">
+<div class="card"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"><h3>كريم تفتيح NovA</h3><p class="price">3,500 ج</p><a class="btn" href="https://wa.me/249969022108?text=عايزة كريم تفتيح">واتساب</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1556228578-8c89d6d9f1c6?w=400"><h3>صابونية نعومة</h3><p class="price">2,800 ج</p><a class="btn" href="https://wa.me/249969022108?text=عايزة صابونية">واتساب</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400"><h3>سيروم شعر</h3><p class="price">4,200 ج</p><a class="btn" href="https://wa.me/249969022108?text=عايزة سيروم">واتساب</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400"><h3>بكج العروس</h3><p class="price">12,000 ج</p><a class="btn" href="https://wa.me/249969022108?text=عايزة بكج العروس">واتساب</a></div>
 </div>
-<div id="shop" class="products">
-<div class="card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"><h3>تيشيرت NovA كاجوال</h3><p>15,000 SDG</p><button onclick="order('تيشيرت NovA كاجوال')">اطلبي واتساب</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1515372039744-875a22a9c0d9?w=500"><h3>فستان صيفي أنيق</h3><p>25,000 SDG</p><button onclick="order('فستان صيفي')">اطلبي واتساب</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"><h3>حذاء رياضي NovA</h3><p>18,000 SDG</p><button onclick="order('حذاء رياضي')">اطلبي واتساب</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500"><h3>شنطة يد فاخرة</h3><p>22,000 SDG</p><button onclick="order('شنطة يد')">اطلبي واتساب</button></div>
-</div>
-<footer>© 2026 NovA Store - toonamohamed55-web.github.io<br>صنع بحب في السودان</footer>
-<script>
-function order(p){window.open('https://wa.me/249999999999?text=مرحبا NovA عايزة اطلب: '+encodeURIComponent(p),'_blank')}
-</script>
+<div id="prices" class="section"><h2>📋 قائمة الأسعار</h2><table><tr><th>المنتج</th><th>السعر</th></tr><tr><td>كريم تفتيح 50ml</td><td>3,500 ج</td></tr><tr><td>صابونية 250g</td><td>2,800 ج</td></tr><tr><td>سيروم شعر 100ml</td><td>4,200 ج</td></tr><tr><td>مقشر وردي</td><td>3,000 ج</td></tr><tr><td>بكج العروس</td><td>12,000 ج</td></tr><tr><td>توصيل أم درمان</td><td>1,000 ج</td></tr><tr><td>توصيل الخرطوم</td><td>1,500 ج</td></tr></table></div>
+<div id="register" class="section"><h2>📄 السجل التجاري</h2><p style="text-align:center"><span class="badge">✅ متجر مسجل ومعتمد</span></p><div style="margin-top:15px;background:#fffafc;padding:15px;border-radius:12px;border:1px dashed #ff8fab;font-size:14px"><p><strong>اسم العمل:</strong> NovA للتجارة ومستحضرات التجميل</p><p><strong>المالكة:</strong> تونا محمد</p><p><strong>رقم التواصل:</strong> 0969022108</p><p><strong>رقم السجل:</strong> SD-OMD-2024-0969</p><p><strong>النشاط:</strong> بيع مستحضرات التجميل - تجزئة إلكترونية</p><p style="margin-top:10px;color:#666;font-size:12px">جميع المنتجات أصلية ومطابقة للمواصفات السودانية.</p></div></div>
+<footer><p>NovA © 2026 - أم درمان | 0969022108</p></footer>
 </body>
 </html>
